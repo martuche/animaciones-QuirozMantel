@@ -191,6 +191,10 @@ h2 {
     font-weight: bold;
 }
 
+.gridServicio a:hover{
+    font-size: 40px;
+}
+
 
 /* Tienda */
 
