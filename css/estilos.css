@@ -72,7 +72,8 @@ body {
 }
 
 .portada {
-    background-color: #7fc29b;
+    /* background-color: #7fc29b; */
+    background-image: linear-gradient(274deg, rgba(127,194,155,1) 42%, rgba(84,108,236,1) 100%);
     padding: 6rem;
     margin: 2rem auto;
 }
