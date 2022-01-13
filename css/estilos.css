@@ -1,0 +1,290 @@
+/* Universal*/
+/* Paleta de colores: c25228 546cec 313628 7fc29b ffeccc */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffeccc;
+    font-family: 'Prata', serif;
+}
+/* Grilla */
+.grilla {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 100%;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "headerGrid"
+        "mainGrid"
+        "footerGrid";
+}
+
+.headerGrid {
+    grid-area: headerGrid;
+}
+
+.mainGrid {
+    grid-area: mainGrid;
+}
+
+.footerGrid {
+    grid-area: footerGrid;
+}
+
+
+.imgLogo {
+    width: 4%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+.ulFlex {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ulFlex li {
+    list-style-type: none;
+    text-align: center;
+    border: solid 1px #313628;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.ulFlex li a {
+    text-decoration: none;
+    color: #c25228;
+}
+
+.linkActivo {
+    font-weight: bold;
+}
+
+.portada {
+    background-color: #7fc29b;
+    padding: 6rem;
+    margin: 2rem auto;
+}
+
+h1 {
+    color: #c25228;
+    font-size: 60px;
+    text-align: left;
+    font-family: 'Ultra', serif;
+    letter-spacing: 0.1rem;
+}
+
+
+.footerFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    padding: 2.5rem;
+}
+
+.footerFlex a {
+    text-decoration: none;
+    color: #c25228;
+}
+
+/* Inicio - Index */
+
+h2 {
+    color: #313628;
+    text-align: center;
+    margin: 4rem;
+}
+
+.enlacesMainGrid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: baseline;
+    margin: 0.5rem;
+}
+
+.gridItem {
+    text-align: center;
+    border: solid #546cec 5px;
+
+}
+
+.imgInicio {
+    width: 60%;
+    padding: 10px;
+    margin: 2rem;
+}
+
+.enlaceTurno {
+    text-align: center;
+    margin: 1.2rem;
+}
+
+.enlaceTurno a {
+    font-size: 40px;
+    font-family: 'Ultra', serif;
+    text-decoration: none;
+    color: #c25228;
+}
+
+/* Servicios */
+
+
+.enlacesServiciosGrid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0.5rem;
+}
+
+.gridServicio {
+    border: solid #546cec 5px;
+}
+
+.imgServicios {
+    width: 50%;
+    padding: 1rem;
+}
+
+
+/* Tienda */
+
+.tiendaEnlaces {
+    text-align: center;
+
+}
+
+.imgTienda {
+    border: solid #546cec 5px;
+    width: 20%;
+    padding: 2rem;
+    margin: 4rem;
+}
+
+/* Blog */
+
+.blogEnlaces {
+    text-align: center;
+}
+
+.imgBlog {
+    border: solid #546cec 5px;
+    width: 15%;
+    padding: 2rem;
+    margin: 4rem;
+}
+
+/* Nosotras */
+
+.presentacion {
+    text-align: center;
+}
+
+.imgNosotras {
+    width: 30%;
+    margin: 2rem;
+}
+
+/* Contacto */
+
+.turnosContacto {
+    text-align: center;
+}
+
+.editTurnos h2 {
+    color: #c25228;
+}
+
+.editTurnos {
+    border: solid 5px #546cec;
+    color: #313628;
+    width: 30%;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.editContacto h2 {
+    color: #c25228;
+}
+
+.editContacto {
+    border: solid 5px #546cec;
+    color: #313628;
+    width: 30%;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.lugar {
+    border: solid 5px #546cec;
+    color: #313628;
+    width: 60%;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.lugar h2 {
+    color: #c25228;
+}
+
+/* MEDIA QUERYS mobile */
+
+@media (max-width: 320px) {
+    .grilla {
+        grid-template-rows: 1fr 3fr 0.5fr;
+    }
+
+    .imgLogo {
+        width: 15%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    .ulFlex {
+        flex-direction: column;
+    }
+
+    .footerFlex {
+        flex-direction: column;
+    }
+
+    .enlacesMainGrid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    .enlacesServiciosGrid{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    .grillaServicios{
+        grid-template-rows: 0.5fr 2fr 0.5fr ;
+    }
+
+}
