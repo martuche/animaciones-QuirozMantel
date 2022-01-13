@@ -68,6 +68,11 @@ body {
     color: #c25228;
 }
 
+.ulFlex li a:hover{
+    color: #546cec;
+    font-size: 20px;
+}
+
 .linkActivo {
     font-weight: bold;
 }
@@ -102,6 +107,11 @@ h1 {
     color: #c25228;
 }
 
+.footerFlex a:hover{
+    color: #313628;
+    font-size: 20px;
+}
+
 /* Inicio - Index */
 
 h2 {
@@ -129,6 +139,11 @@ h2 {
     width: 60%;
     padding: 10px;
     margin: 2rem;
+    transition: width 2s;
+}
+
+.imgInicio:hover{
+    width: 75%;
 }
 
 .enlaceTurno {
@@ -141,6 +156,12 @@ h2 {
     font-family: 'Ultra', serif;
     text-decoration: none;
     color: #c25228;
+    transition: color 2s;
+}
+
+.enlaceTurno a:hover{
+    color: #7fc29b;
+    font-size: 60px;
 }
 
 /* Servicios */
